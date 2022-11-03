@@ -10,75 +10,61 @@ body {
     background-color: #efede6;
 }
 
-header {
+.container-fluid-navbar {
+    width: 100%;
+    height: 80px;
     padding: 0;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-
-}
-
-nav.navbar ul li a {
-    text-decoration: none;
-    color: black;
-    
-}
-
-.navbar ul li:hover {
-    transform: skew(-13deg);
-}
-
-nav.navbar {
-    padding-top: 10px;
-    justify-content: right;
-
+    background-color: transparent;
 }
 
 .navbar {
-    width: 65%;
-    height: 60px;
-    position: right;
-
+    color:black;
 }
 
-@media (max-width: 768px) {
-    nav.navbar {
-        display: none;
-    }
-
-    li {
-        
-    }
-    
+.navbar-toggler {
+    border:0px;
+    color: transparent;
 }
 
-.navbar ul {
-    text-align: right;
-    padding: 10;
-    margin: 0;
-}
-
-ul {
-    list-style: none;
-    font-size: 0;
-}
-
-li {
-    display: inline-block;
-    width: 140px;
-    position: relative;
-    font-size: 1rem;
-    text-align: right;
-    font-weight: 500;
-    margin: 0px 0px 0px 70px;
-}
-
-section.logo.navbar {
-    width: 20%;
+.navbar-brand {
     margin-left: 80px;
-    padding-left: 15px;
+    margin-right: 0px;
+}
+
+#offcanvasNavbar.offcanvas.offcanvas-end {
+   background:#efede6;
+   border-left: 0px;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvasbody {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar-nav {
+    color:black;
+}
+
+.nav-item {
+    margin-right: 30px;
+    color:black;
+
+}
+
+.nav-item:hover {
+    transform: skew(-13deg);
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link.active {
+    font-weight: 500;
 }
 
 main {
@@ -88,21 +74,118 @@ main {
     margin-top: 100px;
 }
 
-section.texto.presentacion {
+.texto-presentacion {
     width: 60%;
     padding-top: 100px;
+    color:black;
 }
 
 h1 {
     font-size: 8rem;
+    font-weight: 900;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-section.texto.presentacion p {
+.texto-presentacion p {
    font-size: 3rem;
    margin-top: 20px;
    margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+
+    .texto-presentacion p {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }    
+
+    .h3 i {
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+
+    div.datos-contact {
+        width: 450px;
+    }
+
+    .number-items ul li h4 {
+        font-size: 3.5em;
+        font-weight: 300;
+    }
+
+    .text-image-proyect1 h3 i {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    h3.benefice-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .benefice ul li h4 {
+        font-size: 1em;
+
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        text-align: center;
+        font-size: 6.5rem;
+    }
+    .texto-presentacion p {
+        font-size: 2rem;
+    }
+    .texto-presentacion {
+        padding-top: 25px;
+    }
+    main {
+        margin-top: 25px;
+    }
+    .number-items ul li h4 {
+        font-size: 2.6em;
+        font-weight: 300;
+    }
+
+    .benefice ul li h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .benefice ul li h4 {
+        font-size: 1em;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    .texto-presentacion p {
+        font-size: 1.5rem;
+    }
+    .texto-presentacion {
+        padding-top: 25px;
+    }
+    main {
+        margin-top: 25px;
+    }
+
+    .number-items ul li h4 {
+        font-size: 2.2em;
+        font-weight: 300;
+    }
 }
 
 footer {
@@ -117,16 +200,21 @@ footer {
 
 }
 
-section.datos-contact {
+div.datos-contact {
     width: 600px;
     height: 150px;
     position: right;
     text-align: right;
 }
 
-div.title-contact {
+h3 {
+    color: black;
     font-size: 4rem;
     text-align: left;
+    font-weight: 700;
+}
+
+div.title-contact {
     margin-left: 80px;
     padding-left: 15px;
     padding-top: 30px;
@@ -134,13 +222,14 @@ div.title-contact {
     padding-bottom: 30px;
 }
 
-section.info-contact {
-    width: 600px;
+div.info-contact {
+    width: 550px;
 }
 
-section.icons-redes {
+div.icons-redes {
     width: 200px;
     text-decoration: none;
+    margin-right: 30px;
 }
 
 div.content-icons-redes {
@@ -173,12 +262,10 @@ div.icon-red-behance {
     height: 40px;
 }
 
-section.items-services {
+div.items-services {
     width: 60%;
     padding-top: 100px;
 }
-
-
 
 div.number-items {
     width: 100%;
@@ -187,7 +274,7 @@ div.number-items {
 }
 
 .number-items h4{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
 }
 
@@ -202,22 +289,12 @@ div.number-items {
 
 .number-items ul li {
     text-align: left;
+    padding-bottom: 20px;
 }
 
 .number-items ul li h4 span {
     font-size: 6rem;
     font-weight: 350;
-}
-
-diva.portfolio-proyects {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 100px;
-    align-content: center;
-    align-items: center;
 }
 
 .row {
@@ -228,10 +305,9 @@ diva.portfolio-proyects {
     
 }
 
-
 div.img-proyect1 {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 div.img-proyect1 img {
@@ -241,16 +317,17 @@ div.img-proyect1 img {
 div.text-image-proyect1 {
     width: 100%;
     height: 60px;
-    font-size: 3rem;
+
 }
 
 div.text-image-proyect1 h3 i {
     font-weight: 300;
+    font-size: 2.8rem;
 }
 
 div.img-proyect2 {
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 div.img-proyect2 img {
@@ -260,16 +337,16 @@ div.img-proyect2 img {
 div.text-image-proyect2 {
     width: 100%;
     height: 60px;
-    font-size: 3rem;
 }
 
 div.text-image-proyect2 h3 i {
     font-weight: 300;
+    font-size: 2.8rem;
 }
 
 div.img-proyect3 {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 
 div.img-proyect3 img {
@@ -279,11 +356,11 @@ div.img-proyect3 img {
 div.text-image-proyect3 {
     width: 100%;
     height: 60px;
-    font-size: 3rem;
 }
 
 div.text-image-proyect3 h3 i {
     font-weight: 300;
+    font-size: 2.8rem;
 }
 
 div.benefices {
@@ -294,10 +371,11 @@ div.benefices {
 
 .benefice-title {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 
-section.items-benefice {
+div.items-benefice {
     width: 60%;
     padding-top: 100px;
 }
@@ -305,11 +383,6 @@ section.items-benefice {
 .benefice h4{
     font-size: 1.8rem;
     font-weight: 300;
-}
-
-.benefice h3 {
-    font-weight: 600;
-    margin-bottom: 50px;
 }
 
 .benefice ul {
@@ -332,11 +405,18 @@ section.items-benefice {
 }
 
 .data-contact {
+    width: 80%;
     padding-top: 100px;
 }
 
 .container-data-contact {
-    height: 700px;
+    height: 100%;
+}
+
+.title-contact {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .field-text div {
@@ -346,12 +426,11 @@ section.items-benefice {
 .field-text input {
     height: 60px;
     font-size: 1.5rem;
-    width: 80%;
+    width: 50%;
     background: #00000014;
     border: none;
     margin-left: 125px;
 }
-
 
 .items-footer {
     line-height: 1.5;
@@ -376,4 +455,6 @@ section.items-benefice {
     position: relative;
     text-align: left;
 }
+
+
 

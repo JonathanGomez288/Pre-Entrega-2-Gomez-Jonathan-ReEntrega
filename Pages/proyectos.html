@@ -8,7 +8,7 @@
     <!--Css-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     
     <!--Google Fonts-->
 
@@ -18,20 +18,38 @@
 </head>
 <body>
     <Header>
-        <section class="logo navbar">
-            <a href="../Inicio.html">
-                <img src="../Asset/logo-jogz-01_Mesa de trabajo 1.png" alt="logotipo">
-            </a>
-        </section>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./Servicios.html">Servicios</a></li>
-                <li><a href="./porque-jogz.html">Por Qué Jogz</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </Header>
+        <div class="container-fluid-navbar">
+          <nav class="navbar navbar-expand-md bg-transparent fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../Asset/logo-jogz-01_Mesa de trabajo 1.png"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./porque-jogz.html">Por Qué Jogz</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </Header>
     
     <main>
         <div class="container portfolio-proyects">
@@ -43,7 +61,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-image-proyect1">
-                        <div>
+                        <div class="text1">
                             <h3><i>01. Diseño de Marca</i></h3>
                         </div>
                     </div>
@@ -72,7 +90,7 @@
                 <div class="col-md-4">
                     <div class="text-image-proyect3">
                         <div>
-                            <h3><i>03. Rediseño UX/UI Web</i></h3>
+                            <h3><i>03. Rediseño UX/UI web</i></h3>
                         </div>
                     </div>  
                 </div>                
@@ -81,13 +99,13 @@
     </main>
 
     <footer>
-        <section class="datos-contact">
+        <div class="datos-contact">
             <div class="title-contact">
                 <h3>Mis Datos</h3>
             </div>
-        </section>
+        </div>
 
-        <section class="info-contact">
+        <div class="info-contact">
             <div class="footer-contact">
                 <div class="items-footer">
                     <div class="data-footer-contact">
@@ -100,9 +118,9 @@
                     </div>
                 </div>
             </div>   
-        </section>
+        </div>
 
-        <section class="icons-redes">
+        <div class="icons-redes">
             <div class="content-icons-redes">
                 <div class="icon-red-twitter">
                     <a href="https://twitter.com/?lang=en">
@@ -120,7 +138,7 @@
                     </a>
                 </div>            
             </div>            
-        </section>
+        </div>
     </footer>
 
     <!--js Bootstrap-->
