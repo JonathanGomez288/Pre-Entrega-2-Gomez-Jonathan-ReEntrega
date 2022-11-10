@@ -1,10 +1,10 @@
-@import "../variables/colors";
+@import "../variables/colores";
 
 main {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 div.datos-contact {
@@ -58,27 +58,38 @@ div.icon-red-behance {
 }
 
 div.items-services {
-    width: 60%;
-    padding-top: 100px;
+    width: 80%;
 }
 
 div.title-service {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     h3{
-        color: $blackie;
+        color: $color-primario;
         font-size: 15rem;
         text-align: right;
         font-weight: 400;
-        margin-right: 150px;
     }
+}
+
+.subtitle-services{
+
+    p{
+        width: 80%;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 150px;
+        color: #000000;
+    }
+    
 }
 
 div.number-items {
     width: 100%;
-    text-align: right;
-    line-height: 2;
+    margin-left: 150px;
+    margin-top: 80px;
 }
 
 .row {

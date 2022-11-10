@@ -1,4 +1,4 @@
-@import "../variables/colors";
+@import "../variables/colores";
 
 .container-block {
     max-width: 80%;
@@ -19,6 +19,9 @@
 
     h3{
         margin: 0px;
+        font-size: 4rem;
+        font-weight: 600;
+        color: $color-primario;
     }
    
 }
@@ -30,7 +33,7 @@
     text-align: left;
     margin-top: 100px;
     margin-left: 140px;
-    color: $Blackie;
+    color: $color-primario;
 
     p{
         margin-bottom: 0;
@@ -60,7 +63,7 @@
 
     h4{
         font-size: 2rem;
-        color: $Blackie;
+        color: $color-primario;
         font-weight: 500;
         margin-bottom: 0px;
     }
@@ -68,7 +71,7 @@
 
 .field-description {
     position: relative;
-    color: $Blackie;
+    color: $color-primario;
     width: 100%;
     height: auto;
     margin-top: 80px;
@@ -81,8 +84,8 @@
     width: 100%;
     height: 80px;
     padding: 20px 30px 20px 30px;
-    background-color: $Black20;
-    color: $Black70;
+    background-color: $color-negro-20;
+    color: $color-negro-70;
     font-size: 1.5rem;
     font-weight: 500;
     border: none;
@@ -96,12 +99,12 @@
 .form-input-large:not(:placeholder-shown) + .form-label  {
     transform: translateY(5px) scale(.7);
     transform-origin: left top;
-    color: black;   
+    color: $color-primario;   
 }
 
 .form-label {
     width: 95%;
-    color: $Black70;
+    color: $color-negro-70;
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -116,16 +119,16 @@
 }
 
 .field-required.field.required.asterico {
-    color: $Blackie;
+    color: $color-primario;
 }
 
-.boton-enviar{
+.button-enviar{
     margin-top: 40px;
     grid-column: 6 / 8;
 
     input{
-        background-color: $balckie;
-        grid-column: 6 / 8;
+        background-color: $color-primario;
+        width: 100%;
         border-radius: 0px;
     }
 }

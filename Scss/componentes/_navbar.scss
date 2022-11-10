@@ -1,4 +1,4 @@
-@import "../variables/colors";
+@import "../variables/colores";
 
 .container-fluid-navbar {
     width: 100%;
@@ -8,7 +8,7 @@
 }
 
 .navbar {
-    color: $blackie;
+    color: $color-primario;
 }
 
 .navbar-toggler {
@@ -22,7 +22,7 @@
 }
 
 #offcanvasNavbar.offcanvas.offcanvas-end {
-    background: $beigesuave;
+    background: $color-secundario;
     border-left: 0px;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .navbar-nav {
-    color: black;
+    color: $color-primario;
 }
 
 .nav-item {
     margin-right: 30px;
-    color: $blackie;
+    color: $color-primario;
 
     &:hover {
         transform: skew(-13deg);
@@ -50,7 +50,7 @@
 }
 
 .nav-link {
-    color: $blackie;
+    color: $color-primario;
 
     &:active {
         font-weight: 500;
