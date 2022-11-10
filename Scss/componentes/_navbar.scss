@@ -1,0 +1,58 @@
+@import "../variables/colors";
+
+.container-fluid-navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.navbar {
+    color: $blackie;
+}
+
+.navbar-toggler {
+    border: 0px;
+    color: transparent;
+}
+
+.navbar-brand {
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+#offcanvasNavbar.offcanvas.offcanvas-end {
+    background: $beigesuave;
+    border-left: 0px;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvasbody {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar-nav {
+    color: black;
+}
+
+.nav-item {
+    margin-right: 30px;
+    color: $blackie;
+
+    &:hover {
+        transform: skew(-13deg);
+    }
+
+}
+
+.nav-link {
+    color: $blackie;
+
+    &:active {
+        font-weight: 500;
+    }
+}

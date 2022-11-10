@@ -1,0 +1,153 @@
+@import "../variables/colors";
+
+@media (max-width: 1400px) {
+
+    .texto-presentacion {
+
+        p {
+            font-size: 2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .h3 {
+
+        i {
+            font-weight: 300;
+            font-size: 1.8rem;
+        }
+    }
+
+    div.datos-contact {
+        width: 450px;
+    }
+
+    .number-items {
+
+        ul {
+            li {
+                h4 {
+                    font-size: 3.5em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .text-image-proyect1 {
+
+        h3 {
+            i {
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    h3.benefice-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .benefice {
+
+        ul {
+            li {
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        text-align: center;
+        font-size: 6.5rem;
+    }
+
+    .texto-presentacion {
+
+        padding-top: 25px;
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    main {
+        margin-top: 25px;
+    }
+
+    .number-items {
+
+        ul {
+            li {
+                h4 {
+                    font-size: 2.6em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .benefice {
+
+        ul {
+            li {
+                h3 {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+
+    .benefice {
+
+        ul {
+            li {
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    .texto-presentacion {
+
+        padding-top: 25px;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    main {
+        margin-top: 25px;
+    }
+
+    .number-items {
+
+        ul {
+            li {
+                h4 {
+                    font-size: 2.2em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

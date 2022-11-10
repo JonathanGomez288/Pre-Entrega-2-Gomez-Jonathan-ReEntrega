@@ -1,0 +1,128 @@
+@import "../variables/colors";
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+div.datos-contact {
+    width: 600px;
+    height: 150px;
+    position: right;
+    text-align: right;
+}
+
+div.title-contact {
+    margin-left: 80px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+div.info-contact {
+    width: 550px;
+}
+
+div.icons-redes {
+    width: 200px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+div.content-icons-redes {
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.icon-red-twitter {
+    width: 40px;
+    height: 40px;
+}
+
+div.icon-red-linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+div.icon-red-behance {
+    width: 40px;
+    height: 40px;
+}
+
+div.items-services {
+    width: 60%;
+    padding-top: 100px;
+}
+
+div.title-service {
+    width: 100%;
+    margin-bottom: 80px;
+
+    h3{
+        color: $blackie;
+        font-size: 15rem;
+        text-align: right;
+        font-weight: 400;
+        margin-right: 150px;
+    }
+}
+
+div.number-items {
+    width: 100%;
+    text-align: right;
+    line-height: 2;
+}
+
+.row {
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+div.benefices {
+    width: 100%;
+    text-align: right;
+    line-height: 2;
+}
+
+div.items-benefice {
+    width: 60%;
+    padding-top: 100px;
+}
+
+.data-contact {
+    width: 80%;
+    padding-top: 100px;
+}
+
+.container-data-contact {
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.items-footer {
+    line-height: 1.5;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

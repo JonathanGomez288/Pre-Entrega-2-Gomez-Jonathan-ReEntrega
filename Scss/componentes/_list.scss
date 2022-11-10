@@ -1,0 +1,90 @@
+@import "../variables/colors";
+
+.number-items {
+
+    ul {
+        width: 100%;
+
+        li {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding-bottom: 20px;
+
+            h4 {
+                font-size: 4rem;
+                font-weight: 900;
+
+                span {
+
+                    font-size: 6rem;
+                    font-weight: 350;
+                }
+            }
+        }
+    }
+}
+
+.benefice {
+
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    ul {
+        width: 100%;
+
+        li {
+            display: block;
+            width: 100%;
+            text-align: left;
+
+        }
+    }
+}
+
+.items-benefice {
+
+    ul {
+
+        li {
+
+            h4 {
+                span {
+
+                    font-size: 4rem;
+                    font-weight: 350;
+                    margin-right: 40px;
+
+                }
+            }
+        }
+    }
+}
+
+.data-footer-contact {
+
+    ul {
+
+        li {
+
+            display: inline;
+            position: relative;
+            text-align: left;
+
+            h5 {
+
+                font-size: 1em;
+                font-weight: normal;
+
+                span {
+
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
