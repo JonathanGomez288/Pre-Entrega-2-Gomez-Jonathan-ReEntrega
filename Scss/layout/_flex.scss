@@ -1,4 +1,5 @@
 @import "../variables/colores";
+@import "../variables/fonts";
 
 main {
     display: flex;
@@ -7,14 +8,88 @@ main {
     margin-top: 60px;
 }
 
+
+h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-presentacion {
+
+    width: 60%;
+    padding-top: 100px;
+    color: $color-primario;
+
+    p {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }    
+}
+
+div.text-image-proyect1 {
+
+    width: 100%;
+    height: 60px;
+    margin-bottom: 80px;
+
+    h3 {
+
+        i {
+            font-weight: 300;
+            font-size: 2.8rem;
+        }
+    }
+}
+
+div.text-image-proyect2 {
+
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+
+    h3 {
+        
+        i {
+            font-weight: 300;
+            font-size: 2.8rem;
+        }
+    }
+}
+
+div.text-image-proyect3 {
+
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+
+    h3 {
+
+        i {
+            font-weight: 300;
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.title-contact {
+    h3 {
+        color: $color-primario;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+
 div.datos-contact {
     width: 600px;
     height: 150px;
-    position: right;
     text-align: right;
 }
 
 div.title-contact {
+    margin-top: 10px;
     margin-left: 80px;
     padding-left: 15px;
     padding-top: 30px;
@@ -61,35 +136,37 @@ div.items-services {
     width: 80%;
 }
 
-div.title-service {
+.title-services {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 
-    h3{
-        color: $color-primario;
-        font-size: 15rem;
-        text-align: right;
+    h3 {
+        font-size: $title-size-1;
         font-weight: 400;
+        text-align: right;
+        color: $color-primario; 
     }
+
 }
 
 .subtitle-services{
 
-    p{
+    p {
         width: 80%;
-        font-size: 2.5rem;
+        font-size: $subtitle-fonts-1;
         font-weight: 400;
         text-align: left;
         margin-left: 150px;
-        color: #000000;
+        color: $color-primario;
     }
     
 }
 
 div.number-items {
     width: 100%;
-    margin-left: 150px;
+    margin-left: 145px;
     margin-top: 80px;
+    padding-left: 380px;
 }
 
 .row {
@@ -99,15 +176,43 @@ div.number-items {
     justify-content: flex-start
 }
 
-div.benefices {
+div.items-benefice {
+    width: 80%;
+    padding-top: 80px;
+}
+
+div.title-benefice {
+    width: 100%;
+    margin-bottom: 40px;
+
+    h3 {
+        color: $color-primario;
+        font-size: $title-size-1;
+        text-align: right;
+        font-weight: 400;
+    }
+}
+
+.subtitle-benefice{
+
+    p {
+        width: 80%;
+        font-size: $subtitle-fonts-1;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 150px;
+        color: $color-primario;
+    }
+    
+}
+
+div.benefice {
     width: 100%;
     text-align: right;
     line-height: 2;
-}
-
-div.items-benefice {
-    width: 60%;
-    padding-top: 100px;
+    margin-left: 145px;
+    margin-top: 80px;
+    padding-left: 160px;
 }
 
 .data-contact {

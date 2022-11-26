@@ -1,42 +1,28 @@
 @import "../variables/colores";
+@import "../variables/fonts";
 
-.container-block {
-    max-width: 80%;
-    margin: auto;
-    position: relative;
-    display: block;
-}
+div.form-content-wrapper {
+    width: 80%;
+    padding-top: 80px;
 
-.container-block-2 {
-    max-width: 80%;
-    margin: auto;
-    position: relative;
-    display:block;
-}
-
-
-.form-content-wrapper{
-
-    h3{
-        margin: 0px;
-        font-size: 4rem;
-        font-weight: 600;
-        color: $color-primario;
-    }
-   
+        h3 {
+            font-size: $title-size-1;
+            font-weight: 400;
+            text-align: right;
+            color: $color-primario;
+            margin-bottom: 80px;
+        }   
 }
 
 .subtitle-intro-form {
-    width: 80%;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 140px;
-    color: $color-primario;
-
-    p{
-        margin-bottom: 0;
+    
+    p {
+        width: 80%;
+        font-size: $subtitle-fonts-1;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 140px;
+        color: $color-primario;
     }
 }
 
@@ -122,11 +108,11 @@
     color: $color-primario;
 }
 
-.button-enviar{
+.button-enviar {
     margin-top: 40px;
     grid-column: 6 / 8;
 
-    input{
+    input {
         background-color: $color-primario;
         width: 100%;
         border-radius: 0px;
